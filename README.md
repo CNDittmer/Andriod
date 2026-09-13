@@ -1,282 +1,88 @@
-# FlockTrack
-
-## Android Chicken Care Tracker
-
-**Developer:** Christopher Dittmer\
-**Platform:** Android\
-**Development Environment:** Android Studio\
-**Project Type:** Mobile Application
-
-------------------------------------------------------------------------
+# Flock Tracker Android Application
 
 ## Project Description
 
-FlockTrack is an Android mobile application designed to help backyard
-chicken owners organize and track information about their flock. The
-application will provide a simple location for recording information
-about individual chickens, egg production, and routine care activities.
+Flock Tracker is an Android application designed to help chicken owners organize and keep track of the birds in their flock. The goal of the application is to provide a simple interface where users can enter information about individual chickens and view their current flock.
 
-The goal of FlockTrack is to create a practical application that is easy
-to use while demonstrating important Android development concepts such
-as user-interface design, navigation, local data storage, and data
-management.
+## Problem Being Addressed
 
-------------------------------------------------------------------------
-
-## Problem Addressed
-
-Backyard chicken owners have several responsibilities that need to be
-monitored regularly. These can include feeding, providing fresh water,
-cleaning the coop, collecting eggs, and monitoring individual chickens.
-
-As the size of a flock increases, remembering information about each
-chicken can become difficult. Owners may also want to keep records of
-egg production or when important care activities were completed.
-
-FlockTrack will address this problem by providing one application where
-users can store and review this information instead of relying on paper
-records, separate notes, or memory.
-
-------------------------------------------------------------------------
+Managing a growing flock can make it difficult to remember information about individual chickens. Flock Tracker provides one location where chicken owners can record and view basic information about each bird.
 
 ## Platform
 
-FlockTrack will be developed for the **Android operating system** using
-**Android Studio**.
+Flock Tracker is being developed using:
 
-The application will initially be designed for Android smartphones and
-will use a touch-based interface. Android provides the tools necessary
-to design, develop, test, and deploy the application.
+- Android Studio
+- Kotlin
+- XML
+- Android SDK
+- GitHub
 
-------------------------------------------------------------------------
+## Current Progress - Module 2
 
-## Front-End Support
+During Module 2, I began developing the working version of the Flock Tracker Android application.
 
-The front end will provide the graphical interface that allows users to
-interact with FlockTrack.
+The following tasks have been completed:
 
-The interface will include:
+- Created the Android Studio project
+- Configured an Android emulator for testing
+- Created the main XML layout
+- Created the MainActivity Kotlin code
+- Added the Flock Tracker title and description
+- Added a chicken name input field
+- Added a breed input field
+- Added an Add to Flock button
+- Added an area for displaying the flock
+- Connected XML interface elements to Kotlin
+- Added button click functionality
+- Added input validation
+- Added Toast notifications
+- Added support for multiple chickens
+- Successfully tested the application using an Android emulator
 
--   Home screen
--   Chicken list
--   Add/edit chicken forms
--   Egg tracking screen
--   Care tracking screen
--   Summary screen
--   Buttons and navigation controls
--   Text fields for entering information
+## Current Functionality
 
-The interface will be designed to remain simple and consistent so that
-users can easily locate the application's major features.
+The user can enter a chicken's name and breed and select the Add to Flock button.
 
-------------------------------------------------------------------------
+The application temporarily stores each chicken and displays the flock as a numbered list.
 
-## Back-End Support
+Example:
 
-The back end will be responsible for storing and retrieving application
-data.
+1. Nugget - Rhode Island Red
+2. Daisy - Leghorn
+3. Pepper - Plymouth Rock
 
-Local data storage will be used so that the application's basic
-functions can operate without requiring a constant Internet connection.
+If the user attempts to add a chicken without entering both a name and breed, the application displays a message requesting the missing information.
 
-The application will store information related to:
+## Planned Features
 
--   Chickens
--   Egg collection
--   Care activities
--   User-entered notes
+Future versions of Flock Tracker are planned to include:
 
-The back end will allow information to be created, retrieved, updated,
-and deleted as necessary.
+- Chicken age or hatch date
+- Hen or rooster identification
+- Egg production tracking
+- Breed information
+- Health records
+- Notes for individual chickens
+- Edit and delete functionality
+- Chicken profiles
+- Persistent data storage
+- Improved user interface
 
-------------------------------------------------------------------------
+## Project Structure
 
-## Application Functionality
+### MainActivity.kt
 
-### Flock Management
+Contains the Kotlin code responsible for processing chicken information and displaying the flock.
 
-Users will be able to:
+### activity_main.xml
 
--   Add a chicken
--   View chickens in the flock
--   Edit chicken information
--   Delete a chicken
--   Record notes about individual chickens
+Contains the XML layout for the Flock Tracker main screen.
 
-Information recorded for each chicken may include:
+## Development Status
 
--   Name
--   Breed
--   Age
--   Sex
--   Notes
+Flock Tracker is currently in the early development stage. The basic application structure and flock-entry functionality are working successfully. Additional flock-management features will be added.
 
-### Egg Tracking
+## GitHub Wiki
 
-Users will be able to:
-
--   Enter the number of eggs collected
--   Record the collection date
--   View previous egg records
--   View basic egg-production totals
-
-### Care Tracking
-
-Users will be able to record routine activities such as:
-
--   Feeding
--   Water checks or changes
--   Coop cleaning
--   Other flock-care activities
-
-------------------------------------------------------------------------
-
-# Design and Wireframes
-
-## Home Screen
-
-``` text
-+--------------------------------+
-|           FlockTrack           |
-|--------------------------------|
-|                                |
-|       [ My Chickens ]          |
-|                                |
-|       [ Egg Tracker ]          |
-|                                |
-|       [ Care Tracker ]         |
-|                                |
-|       [ View Summary ]         |
-|                                |
-+--------------------------------+
-```
-
-## My Chickens Screen
-
-``` text
-+--------------------------------+
-|          My Chickens           |
-|--------------------------------|
-| Henrietta     Rhode Island Red |
-| Daisy         Plymouth Rock    |
-| Pepper        Australorp       |
-|                                |
-|       [ + Add Chicken ]        |
-+--------------------------------+
-```
-
-## Add Chicken Screen
-
-``` text
-+--------------------------------+
-|          Add Chicken           |
-|--------------------------------|
-| Name:   [________________]     |
-|                                |
-| Breed:  [________________]     |
-|                                |
-| Age:    [________________]     |
-|                                |
-| Sex:    [________________]     |
-|                                |
-| Notes:  [________________]     |
-|         [________________]     |
-|                                |
-|          [ SAVE ]              |
-+--------------------------------+
-```
-
-## Egg Tracker Screen
-
-``` text
-+--------------------------------+
-|          Egg Tracker           |
-|--------------------------------|
-| Date:        [____________]    |
-|                                |
-| Eggs Today:  [____________]    |
-|                                |
-|          [ SAVE ]              |
-|                                |
-| This Week:  28 Eggs            |
-| This Month: 97 Eggs            |
-+--------------------------------+
-```
-
-------------------------------------------------------------------------
-
-## Planned Project Structure
-
-``` text
-FlockTrack
-│
-├── Home
-├── My Chickens
-│   ├── Add Chicken
-│   ├── Edit Chicken
-│   └── Delete Chicken
-├── Egg Tracker
-│   ├── Add Egg Record
-│   └── View Egg History
-├── Care Tracker
-│   ├── Feeding
-│   ├── Water
-│   └── Coop Cleaning
-└── Summary
-    ├── Flock Information
-    └── Egg Production
-```
-
-------------------------------------------------------------------------
-
-## Development Goals
-
-1.  Create a functional Android mobile application.
-2.  Develop an organized and easy-to-use interface.
-3.  Implement navigation between application screens.
-4.  Implement persistent local data storage.
-5.  Allow users to add, view, edit, and delete information.
-6.  Test the application and correct programming or usability problems.
-7.  Maintain project files and documentation using GitHub.
-
-------------------------------------------------------------------------
-
-## Possible Future Features
-
--   Chicken photographs
--   Feeding reminders
--   Coop-cleaning notifications
--   Health and observation history
--   Egg-production charts
--   Individual egg-production tracking
--   Data backup
--   Cloud synchronization
-
-------------------------------------------------------------------------
-
-## GitHub Project Documentation
-
-GitHub will be used throughout the development of FlockTrack for version
-control and project documentation.
-
-The repository will contain the Android project files and this README
-file. A GitHub Wiki will also be used to publish the project outline and
-additional project documentation as required by the course.
-
-------------------------------------------------------------------------
-
-## Project Status
-
-**Current Stage:** Planning and Design
-
-The initial project concept, requirements, functionality, and wireframes
-have been established. Development of the Android application will begin
-following approval of the project outline.
-
-------------------------------------------------------------------------
-
-## Author
-
-**Christopher Dittmer**
-
-FlockTrack Android Application Project
+The original Flock Tracker project outline and development documentation are available in the project's GitHub Wiki.
