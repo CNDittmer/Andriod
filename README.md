@@ -18,9 +18,9 @@ Flock Tracker is being developed using:
 - Android SDK
 - GitHub
 
-## Current Progress - Module 2
+## Current Progress - Project Activity Submission 3
 
-During Module 2, I began developing the working version of the Flock Tracker Android application.
+Development of the Flock Tracker application has continued from the previous project activities. The basic flock-entry system is working, and the application has been successfully tested using the Android emulator.
 
 The following tasks have been completed:
 
@@ -38,7 +38,10 @@ The following tasks have been completed:
 - Added input validation
 - Added Toast notifications
 - Added support for multiple chickens
-- Successfully tested the application using an Android emulator
+- Tested the application using an Android emulator
+- Reviewed and updated project documentation
+- Added version tracking through a project changelog
+- Prepared the current application code for GitHub Classroom
 
 ## Current Functionality
 
@@ -53,6 +56,72 @@ Example:
 3. Pepper - Plymouth Rock
 
 If the user attempts to add a chicken without entering both a name and breed, the application displays a message requesting the missing information.
+
+## Version Changelog
+
+### Version 0.1 - Initial Planning
+
+- Created the original Flock Tracker project outline
+- Identified the problem the application will address
+- Selected Android as the development platform
+- Selected Kotlin and XML for development
+- Created initial application wireframes
+- Identified planned application features
+
+### Version 0.2 - Initial Development
+
+- Created the Android Studio project
+- Created the main application layout
+- Added chicken name and breed input fields
+- Added the Add to Flock button
+- Connected XML components to Kotlin
+- Added input validation
+- Added Toast notifications
+- Added support for multiple chickens
+- Successfully tested the application using the Android emulator
+
+### Version 0.3 - Current Update
+
+- Continued testing the Flock Tracker application
+- Reviewed existing Kotlin and XML code
+- Verified the basic flock-entry functionality
+- Updated project documentation
+- Added a formal version changelog
+- Updated the README to reflect current development progress
+- Prepared current project changes for GitHub Classroom
+
+### Version 0.4 - Future Update
+
+Planned development includes:
+
+- Add chicken age or hatch date
+- Add hen or rooster identification
+- Improve the chicken information display
+- Begin adding edit and delete functionality
+- Continue improving the user interface
+
+### Version 0.5 - Future Update
+
+Planned development includes:
+
+- Add egg production tracking
+- Add health records
+- Add notes for individual chickens
+- Add chicken profiles
+- Begin implementing persistent data storage
+- Conduct additional application testing
+
+### Version 1.0 - Final Release
+
+The final version is planned to include:
+
+- Completed primary flock-management features
+- Improved user interface
+- Persistent data storage
+- Final testing and debugging
+- Updated README and GitHub Wiki
+- Final source code uploaded to GitHub Classroom
+- Completed application ready for Module 8 submission
 
 ## Planned Features
 
@@ -81,9 +150,10 @@ Contains the XML layout for the Flock Tracker main screen.
 
 ## Development Status
 
-Flock Tracker is currently in the early development stage. The basic application structure and flock-entry functionality are working successfully. Additional flock-management features will be added.
+Flock Tracker is currently under active development. The basic application structure, input validation, and flock-entry functionality are working successfully. Current development is focused on expanding flock-management features, improving the user interface, and preparing the application for the final Module 8 submission.
 
 ## GitHub Wiki
 
-The original Flock Tracker project outline and development documentation are available in the project's GitHub Wiki.
+The original Flock Tracker project outline and development documentation are available in the project's GitHub Wiki:
+
 https://github.com/CNDittmer/Andriod/wiki
