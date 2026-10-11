@@ -1,159 +1,159 @@
-# Flock Tracker Android Application
+# Flock Tracker
+### Android Application Development Project
 
-## Project Description
+**Developer:** Christopher Dittmer  
+**Development Platform:** Android Studio  
+**Programming Language:** Kotlin  
+**User Interface:** XML  
+**Data Storage:** SharedPreferences and JSON  
+**Repository:** https://github.com/CNDittmer/Andriod
 
-Flock Tracker is an Android application designed to help chicken owners organize and keep track of the birds in their flock. The goal of the application is to provide a simple interface where users can enter information about individual chickens and view their current flock.
+## 1. Project Description
 
-## Problem Being Addressed
+Flock Tracker is an Android application designed to help chicken owners organize and manage their flocks. The application provides a simple interface where users can enter each chicken's name and breed and view their flock information.
 
-Managing a growing flock can make it difficult to remember information about individual chickens. Flock Tracker provides one location where chicken owners can record and view basic information about each bird.
+The application was developed using Android Studio, Kotlin, and XML.
 
-## Platform
+## 2. Problem Addressed
 
-Flock Tracker is being developed using:
+Managing a flock of chickens can become difficult as the number of birds increases. Owners may have trouble remembering individual chicken names, breeds, and other important information.
 
-- Android Studio
-- Kotlin
-- XML
-- Android SDK
-- GitHub
+Flock Tracker addresses this problem by providing a centralized digital record of the chickens in a flock.
 
-## Current Progress - Project Activity Submission 3
+## 3. Platform
 
-Development of the Flock Tracker application has continued from the previous project activities. The basic flock-entry system is working, and the application has been successfully tested using the Android emulator.
+Flock Tracker is designed for Android devices.
 
-The following tasks have been completed:
+- **IDE:** Android Studio
+- **Language:** Kotlin
+- **Interface:** XML
+- **Operating System:** Android
+- **Version Control:** Git and GitHub
 
-- Created the Android Studio project
-- Configured an Android emulator for testing
-- Created the main XML layout
-- Created the MainActivity Kotlin code
-- Added the Flock Tracker title and description
-- Added a chicken name input field
-- Added a breed input field
-- Added an Add to Flock button
-- Added an area for displaying the flock
-- Connected XML interface elements to Kotlin
-- Added button click functionality
-- Added input validation
-- Added Toast notifications
-- Added support for multiple chickens
-- Tested the application using an Android emulator
-- Reviewed and updated project documentation
-- Added version tracking through a project changelog
-- Prepared the current application code for GitHub Classroom
+## 4. Front-End and Back-End Support
 
-## Current Functionality
+### Front-End
 
-The user can enter a chicken's name and breed and select the Add to Flock button.
+The application uses an XML-based interface containing:
 
-The application temporarily stores each chicken and displays the flock as a numbered list.
+- Application title and description
+- Chicken name input field
+- Chicken breed input field
+- Add to Flock button
+- My Flock display section
+- Scrollable screen layout
 
-Example:
+### Back-End
 
-1. Nugget - Rhode Island Red
-2. Daisy - Leghorn
-3. Pepper - Plymouth Rock
+Kotlin handles the application's functionality, including:
 
-If the user attempts to add a chicken without entering both a name and breed, the application displays a message requesting the missing information.
+- Processing user input
+- Validating required fields
+- Creating chicken records
+- Updating the flock display
+- Displaying confirmation messages
+- Managing locally stored flock information
 
-## Version Changelog
+SharedPreferences and JSON provide persistent local storage, allowing flock records to remain available after the application is closed and reopened.
 
-### Version 0.1 - Initial Planning
+## 5. Application Functionality
 
-- Created the original Flock Tracker project outline
-- Identified the problem the application will address
-- Selected Android as the development platform
-- Selected Kotlin and XML for development
-- Created initial application wireframes
-- Identified planned application features
+The application allows users to:
 
-### Version 0.2 - Initial Development
+1. Enter a chicken's name.
+2. Enter the chicken's breed.
+3. Add the chicken to the flock.
+4. View a numbered list of chickens.
+5. Receive confirmation messages.
+6. Receive warnings when required fields are empty.
+7. Automatically save flock information.
+8. Reload saved flock records when reopening the application.
 
-- Created the Android Studio project
-- Created the main application layout
-- Added chicken name and breed input fields
-- Added the Add to Flock button
-- Connected XML components to Kotlin
-- Added input validation
-- Added Toast notifications
-- Added support for multiple chickens
-- Successfully tested the application using the Android emulator
+The application works offline and does not require a user account.
 
-### Version 0.3 - Current Update
+## 6. Application Design
 
-- Continued testing the Flock Tracker application
-- Reviewed existing Kotlin and XML code
-- Verified the basic flock-entry functionality
-- Updated project documentation
-- Added a formal version changelog
-- Updated the README to reflect current development progress
-- Prepared current project changes for GitHub Classroom
+Flock Tracker uses a simple vertical layout intended to make flock management easy.
 
-### Version 0.4 - Future Update
+The main screen includes two input fields, an Add to Flock button, and a section displaying registered chickens.
 
-Planned development includes:
+The interface uses Android XML components, while Kotlin manages button events and application behavior.
 
-- Add chicken age or hatch date
-- Add hen or rooster identification
-- Improve the chicken information display
-- Begin adding edit and delete functionality
-- Continue improving the user interface
+### Main Screen Wireframe
 
-### Version 0.5 - Future Update
+```text
++----------------------------+
+|        Flock Tracker       |
+|                            |
+| Keep track of the chickens |
+|       in your flock.       |
+|                            |
+| Chicken Name               |
+| [Enter chicken name      ] |
+|                            |
+| Breed                      |
+| [Enter chicken breed     ] |
+|                            |
+| [      Add to Flock      ] |
+|                            |
+| My Flock                   |
+|                            |
+| 1. Henrietta - Rhode       |
+|    Island Red              |
+|                            |
++----------------------------+
+```
 
-Planned development includes:
+*Example data shown for illustration.*
 
-- Add egg production tracking
-- Add health records
-- Add notes for individual chickens
-- Add chicken profiles
-- Begin implementing persistent data storage
-- Conduct additional application testing
+## 7. Testing and Validation
 
-### Version 1.0 - Final Release
+The application includes validation to prevent users from adding chickens without entering both a name and a breed.
 
-The final version is planned to include:
+Permanent storage was tested by adding a chicken, closing the application, and reopening it. The saved chicken remained visible.
 
-- Completed primary flock-management features
-- Improved user interface
-- Persistent data storage
-- Final testing and debugging
-- Updated README and GitHub Wiki
-- Final source code uploaded to GitHub Classroom
-- Completed application ready for Module 8 submission
+## 8. Project Development and Changelog
 
-## Planned Features
+### Initial Development
+- Created the Android Studio project.
+- Developed the XML layout.
+- Added chicken name and breed input fields.
+- Created the Add to Flock button.
 
-Future versions of Flock Tracker are planned to include:
+### Functionality Development
+- Implemented Kotlin event handling.
+- Added input validation.
+- Created the flock display list.
+- Added confirmation messages.
 
-- Chicken age or hatch date
-- Hen or rooster identification
-- Egg production tracking
-- Breed information
-- Health records
-- Notes for individual chickens
-- Edit and delete functionality
-- Chicken profiles
-- Persistent data storage
-- Improved user interface
+### Storage and Final Improvements
+- Implemented persistent local storage.
+- Updated the displayed application name to Flock Tracker.
+- Tested saved records after restarting the application.
+- Updated project documentation.
 
-## Project Structure
+## 9.Future Enhancements
 
-### MainActivity.kt
+Potential improvements include:
 
-Contains the Kotlin code responsible for processing chicken information and displaying the flock.
+Editing and deleting chicken records
 
-### activity_main.xml
+Recording egg production
 
-Contains the XML layout for the Flock Tracker main screen.
+Tracking feeding schedules
 
-## Development Status
+Recording health information
 
-Flock Tracker is currently under active development. The basic application structure, input validation, and flock-entry functionality are working successfully. Current development is focused on expanding flock-management features, improving the user interface, and preparing the application for the final Module 8 submission.
+Adding chicken photographs
 
-## GitHub Wiki
+Exporting flock records
 
-The original Flock Tracker project outline and development documentation are available in the project's GitHub Wiki:
+Cloud backup and synchronization
 
-https://github.com/CNDittmer/Andriod/wiki
+These are planned enhancements and are not part of the currently implemented functionality.
+
+10. Conclusion
+
+Flock Tracker demonstrates the development of a functional Android application using Kotlin, XML, event handling, data validation, and persistent local storage.
+
+The project provides a foundation for future improvements that could make managing backyard chicken flocks more efficient and organized.
